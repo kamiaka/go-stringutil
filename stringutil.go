@@ -8,7 +8,7 @@ import (
 // Insert parameters to template string
 func Insert(str string, params interface{}) (string, error) {
 	var res string
-	tmpl, err := template.New("url").Parse(str)
+	tmpl, err := template.New("str").Parse(str)
 
 	if err != nil {
 		return res, err
